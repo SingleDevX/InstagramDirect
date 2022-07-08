@@ -26,11 +26,8 @@ function sleep(ms) {
 }
 async function SignUp(){
     var email = 'mortezanabavi'+Math.floor(Math.random() * 900)+'@gmail.com';
-    document.getElementById("email").value = email;
-    document.getElementById("btn-id-hmjjvmhj9zg").click();
+    var tagdata = document.getElementsByTagName("textarea")[0]
+    tagdata.value = 'Hi'
     showDialog('SignUp Done.');
-    await sleep(4000);
-    ClearCookie();
-    window.open("https://waitlist.stackedinvest.com/invest?kid=2BGR4H", "_self");
 }
 SignUp();
